@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product details</title>
+</head>
+<link rel="stylesheet" href="stylesheet.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script>
+    var countDownDate = new Date("July 7, 2022 18:00:00").getTime();
+    var x = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+<body>
+<div>
+    <div>
+        <h2>iPhone 13 Pro Max 1TB</h2>
+    </div>
+    <div class="align-items">
+        <div>
+            <img class="img_primary" src="https://cellphones.com.vn/media/catalog/product/i/p/iphone_13-_pro-5_4.jpg">
+        </div>
+        <div class="">
+            <span>ID: 12345</span><br/>
+            <span>Start: 11h00 1/7/2022 </span><br/>
+            <span>End: 18h00 7/7/2022</span><br/>
+            <span>Time remaining: <span id="demo"></span></span><br/>
+            <span>Historical cost: 1600$</span><br/>
+            <span>Current Price: 1100$</span><br/>
+        </div>
+        <div>
+            <table class="table table-bordered table-striped table-auction">
+                <tr>
+                    <th>STT</th>
+                    <th>Amount of money($)</th>
+                    <th>Auction time</th>
+                    <th>Member</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1100</td>
+                    <td>18:00:00 1/7/2022</td>
+                    <td>Vinh2002</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>900</td>
+                    <td>17:00:00 1/7/2022</td>
+                    <td>Toan32</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>850</td>
+                    <td>16:00:00 1/7/2022</td>
+                    <td>Tuan2001</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>600</td>
+                    <td>15:00:00 1/7/2022</td>
+                    <td>Tuan2001</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>600</td>
+                    <td>14:00:00 1/7/2022</td>
+                    <td>Dieu1203</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>500</td>
+                    <td>13:00:00 1/7/2022</td>
+                    <td>Tien1203</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <h4>Another image</h4>
+        <div class="displayflex">
+            <img class="img-second"
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM0DT7mGvbfqDrg5heQ-MKKBX0V3Ui_mxg_gA5gLBnusy6pB9vdbpSS9Lp-1Ib7H4pu6s&usqp=CAU">
+            <img class="img-second"
+                 src="https://res.cloudinary.com/grover/image/upload/f_webp,q_auto/b_white,c_pad,dpr_2.0,h_500,w_520/f_auto,q_auto/v1649166435/vforqq9vmti4a7ovjnwo.png">
+            <img class="img-second"
+                 src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F08%2Fapple-most-expensive-model-iphone-13-pro-max-1tb-rumor-000.jpg?w=960&cbr=1&q=90&fit=max">
+            <img class="img-second"
+                 src="https://cdn.sforum.vn/sforum/wp-content/uploads/2021/09/lcimg-a194780c-218b-4835-a70c-847baa93d76f.jpg">
+            <img class="img-second"
+                 src="https://images.livemint.com/img/2021/09/14/1600x900/pro_1631643479510_1631643494121.png">
+            <img class="img-second" src="https://cdn.mos.cms.futurecdn.net/oQq2rjimzg5vwn9MxTYWPQ.jpg">
+            <img class="img-second"
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrkde79ZwkicfJCPyMab0oi8OktqqFnK5f8w&usqp=CAU">
+        </div>
+    </div>
+    <div>
+        <h3>Details</h3><br/>
+        <div class="st-param">
+            <ul>
+                <li data-info="Màn hình"><span class="icon-mobile"></span>
+                    <p>6.7 inch, OLED, Super Retina XDR, 2778 x 1284 Pixels</p></li>
+                <li data-info="Camera sau"><span class="icon-cam"></span>
+                    <p>12.0 MP + 12.0 MP + 12.0 MP </p></li>
+                <li data-info="Camera Selfie"><span class="icon-front-camera"></span>
+                    <p>12.0 MP </p></li>
+                <li data-info="CPU"><span class="icon-cpu"></span>
+                    <p>Apple A15 Bionic</p></li>
+                <li data-info="Bộ nhớ trong"><span class="icon-hdd-black"></span>
+                    <p>1 TB internal memory
+                    </p></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Delivery information</h3><br/>
+            <div class="">
+                <span>Delivery address: 295 Nguyễn Tất Thành, Thanh Bình, Hải Châu, Đà Nẵng, Việt Nam</span><br>
+                <span>Phone number: +84 2366517021</span>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d479.21905197383325!2d108.20951899679915!3d16.07833254370184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219a486b7f699%3A0xae6269b629a63e82!2zVHJ1bmcgdMOibSDEkcOgbyB04bqhbyBs4bqtcCB0csOsbmggdmnDqm4gQ29kZUd5bSDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1656658390900!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

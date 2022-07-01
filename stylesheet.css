@@ -1,0 +1,32 @@
+.img_primary{
+    height: 350px;
+    width: 280px;
+}
+.img-second{
+    height: 100px;
+    width: 100px;
+}
+
+a {
+    /*color: #11b683;*/
+}
+a:hover {
+    /*color: #ff3366;*/
+}
+
+.table-auction{
+    width: 500px !important;
+
+}
+
+.table-auction th {
+    vertical-align: middle !important;
+    border-bottom: 2px solid #dee2e6!important;
+    background-color: #11b683!important;
+    color: white!important;
+}
+.table-auction td, .table-auction th {
+    padding: 0.25rem!important;
+    vertical-align: top!important;
+    border-top: 1px solid #dee2e6!important;
+}
